@@ -1,0 +1,13 @@
+Ternary Operator (삼항연산자)
+ A conditional expression using the ternary operator (?:) can have one of two values based on a condition. The syntax:
+(condition) ? val1 : val2;
+
+If the condition is true, the expression has the value of val1, Otherwise it has the value of val2.
+var status = (age >= 18) ? "adult" : "minor"; 
+
+Example)
+var age=26;
+var beverage = (age >= 21) ? "Beer" : "Juice";
+console.log(beverage);
+
+
