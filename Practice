@@ -1,0 +1,11 @@
+console.log("Hello World!");
+
+var myTeacher = "Pat";
+ console.log(myTeacher);
+
+
+ var yujin="yu"
+ console.log(yujin);
+
+ var anObject = { str: "Some text", id: 5 }; 
+console.log(anObject);
