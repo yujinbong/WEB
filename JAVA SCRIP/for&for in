@@ -34,7 +34,7 @@ console.log(str);
 
 
 var member = {
-    name : "rockey", age:1, place:"wellely"};
+    name : "rocky", age:1, place:"wellely"};
 
         var title = "your members are : \n\n";
         //for(var x in member){
