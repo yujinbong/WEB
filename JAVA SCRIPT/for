@@ -1,0 +1,20 @@
+
+Example1)
+var days="The days in September:\n";
+
+for(var i=0; i <=30; i++ ){
+    days+=i+"\n";
+}
+console.log(days);
+
+Example2)
+for(var i=0; i <=30; i++ ){
+    console.log(days);;
+}
+Example3)
+var age="your age is :";
+
+for(i=0; i <29; i++){
+    age+="your age is "+i+'\n';
+}
+console.log(age);
