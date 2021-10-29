@@ -1,0 +1,21 @@
+  The split(' ') uses the specified character(s) to break the argument string into an array.
+  Syntax: stringName.split(x)
+
+
+문법 : string.split(separator, limit)
+* separator에는 분할의 기준을 넣어야함 -> 예를들어 쉼표를 기준으로 분할할때에는 ','
+
+출처 : https://blog.naver.com/pis7pis7/222415207460
+
+Example1)
+
+var  myString    =  "WEB 222";
+var  myArray1    =  myString.split(' ');
+
+myArray1[0] //  element 0 returns "WEB"
+myArray1[1] //  element 1 returns "222"	
+
+Example2)
+const str = 'Yujin can do it everything!';
+const words=str.split(' ');
+console.log(words[3]); // it  -> 추가설명:띄어쓰기를 기반으로 index0이 Yujin임으로 3번째 index 문자열인 it이 출력.
