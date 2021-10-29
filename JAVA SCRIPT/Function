@@ -19,3 +19,13 @@ var add2numbers = function(a, b){
 
 console.log( addTwoNumbers(2, 3) ); // 5
 console.log( add2numbers(2, 4) );   // 6
+
+Example3)
+function add2(){
+    var sum2=0;
+    for(i=0; i<arguments.length; i++){
+        sum2+=arguments[i];
+    }
+    return sum2;
+}
+console.log(add2(20,4,32));
