@@ -5,3 +5,17 @@ function sqare (number){
 }
 
 console.log(sqare(5));
+
+
+Example2)
+function addTwoNumbers(a, b) {
+	return a + b;
+}
+
+// using function expression approach
+var add2numbers = function(a, b){
+	return a + b;
+};
+
+console.log( addTwoNumbers(2, 3) ); // 5
+console.log( add2numbers(2, 4) );   // 6
