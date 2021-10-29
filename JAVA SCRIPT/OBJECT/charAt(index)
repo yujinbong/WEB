@@ -1,0 +1,50 @@
+매개변수
+0과 문자열의 길이 - 1 사이의 정수값. 
+인자를 생략하면 기본값으로 0를 설정되고 첫 문자를 반환한다. 
+
+지정된 인덱스에 해당하는 유니코드 단일문자를 반환한다.
+만약 인덱스가 문자열 길이보다 큰 경우 빈 문자열 (예) " " 을 반환한다.  
+
+
+
+The method returns the character at the specific index.
+  Characters in a string are indexed from left to right
+  Index start from 0 to one less than the length.
+  The index of the last character in a string called myString is myString.length - 1
+  If the index you supply is out of range, JavaScript returns an empty string
+  Syntax: stringName.charAt(index)
+  NOTE:  You can also use the familiar [ ] notation to access a character in a string, ie, 
+  Syntax: stringName[index]
+
+
+Example1)
+var myString = "WEB222"; 
+ //                        012345                             						   
+myString.charAt(0) // returns  "W" 
+myString.charAt(1) // returns  "E" 
+myString.charAt(2) // returns  "B"
+myString.charAt(3) // returns  "2" 
+myString.charAt(4) // returns  "2" 
+myString.charAt(5) // returns  "2" 
+myString.charAt(6) // returns  ""
+
+
+Example2)
+var anyString = 'Brave new world';
+console.log("The character at index 0   is '" + anyString.charAt()   + "'");
+// No index was provided, used 0 as default
+
+console.log("The character at index 0   is '" + anyString.charAt(0)   + "'");
+console.log("The character at index 1   is '" + anyString.charAt(1)   + "'");
+console.log("The character at index 2   is '" + anyString.charAt(2)   + "'");
+console.log("The character at index 3   is '" + anyString.charAt(3)   + "'");
+console.log("The character at index 4   is '" + anyString.charAt(4)   + "'");
+console.log("The character at index 999 is '" + anyString.charAt(999) + "'");
+
+output : 
+The character at index 0   is 'B'
+The character at index 1   is 'r'
+The character at index 2   is 'a'
+The character at index 3   is 'v'
+The character at index 4   is 'e'
+The character at index 999 is ''
