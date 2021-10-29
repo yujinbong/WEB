@@ -1,0 +1,47 @@
+parseInt()
+숫자타입으로 변경하는 방법으로 자바스크립트의 내장함수인 parseInt()를 사용할 수 있습니다. 
+이 함수는 해당하는 값을 숫자 타입으로 바꾸어 변경해줍니다. 문법은 아래와 같죠.
+
+parseInt(숫자타입으로 변경할 문자열, 진법)
+
+
+여기서 첫번째 문자열은 필수이고 진법은 없으면 10진법으로 사용됩니다. 만약 16진법인 경우라면 parseInt('123', 16)처럼 사용할 수 있죠.
+
+Example 1)
+*  base 10 (decimal) examples
+
+parseInt('15', 10);     // returns 15
+parseInt('15');           // returns 15
+parseInt(15.99, 10);   // returns 15
+parseInt('15*3', 10);  // returns 15
+parseInt('Hello');        // returns NaN
+
+*  base 8 (octal) example
+parseInt('17', 8)     // returns 15
+parseInt('18', 8)     // returns 1
+
+*  base 16 (hex) examples
+parseInt('F', 16);         // returns 15
+parseInt('FXX123', 16);    // returns 15
+
+*   base 2 (binary) example
+parseInt('1111', 2)    // returns 15
+parseInt('1211', 2)    // returns 1
+
+Example 2)
+
+str_value = '123';
+typeof(str_value);
+// 현재의 타입이 string 문자타입임을 확인
+
+int_value = parseInt(str_value);
+// 함수를 사용하여 숫자 자료형으로 변경함
+typeof(int_value);
+// 타입 확인결과 문자에서 숫자 타입으로 변경되었음
+
+console.log(int_value)
+
+// 123이 출력됨
+
+
+
