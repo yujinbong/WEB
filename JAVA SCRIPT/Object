@@ -1,0 +1,32 @@
+Object란 여러 속성을 하나의 변수에 저장할 수 있도록 해주는 데이터 타입이다.
+ 
+ Reference : https://velog.io/@surim014/%EC%9B%B9%EC%9D%84-%EC%9B%80%EC%A7%81%EC%9D%B4%EB%8A%94-%EA%B7%BC%EC%9C%A1-JavaScript%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-part-7-Object-35k01xmdfp
+
+
+객체는 변수이다. 그러나 객체에는 많은 값이 포함될 수 있다.
+(자바스크립트 변수처럼 단일 값을 포함 할 수 있다.)
+객체는 중괄호 표기를 이용하여 만들 수 있다.
+객체는 각각의 key/value에 대한 정보를 나열할 수 있다.
+Key는 문자열 또는 기호여야 한다.
+Value는 모든 유형이 될 수 있다.
+객체는 한 쌍의 key/value 뒤에 쉼표를 이용하여 그 뒤에 오는 key/value와 구분해주어야 한다.
+객체에서 명명된 값을 *Properties라고 한다.
+변수는 예약어의 이름을 가질 수 없지만 객체는 어떠한 이름이어도 상관없다.
+객체 변수를 복사하면 참조가 복사되고 객체가 복제되지 않는다.
+
+
+***String object - properties and methods ***
+length 
+charAt(n) 
+charCodeAt(n) 
+concat(string2, string3)
+indexOf('x') 
+lastIndexOf('x') 
+split('x') 
+substr(x,y) 
+substring(x,y) 
+toLowerCase() 
+toUpperCase() 
+trim() 
+prototype
+
