@@ -1,0 +1,55 @@
+The concat(....) method combines the text of two or more strings.
+It is recommended that you use the assignment operators (+, +=) instead of the concat method.
+Syntax: stringName.concat(string2, string3)
+
+
+ - 자바스크립트 concat 이란?
+   concat 은 두 개의 문자열을 하나의 문자열로 만들어주는 역활을 하는 함수이며,
+   입력값을 문자열 대신 배열을 사용하면 두 개의 배열을 하나의 배열로 만들어주는 역할도 하는 함수입니다
+   
+   
+  - 자바스크립트 concat 사용방법 (문자열 합치기)
+   "[문자열]".concat("[문자열]");
+
+ - 자바스크립트 concat 사용방법 (배열 합치기)
+    [배열명].concat([배열명]);
+
+
+
+
+
+
+
+
+Example1)
+
+var myString0 = "My courses are: ";
+var myString1 = "WEB222";
+var myString2 = "OOP244";
+
+myString0 = myString0.concat(myString1, " & ", myString2);
+ 
+console.log(myString0); // My courses are: WEB222 & OOP244
+
+Example2) // 문자열 합치기
+
+var str1 = "con";
+var str2 = "cat";
+
+document.write("str1.concat(str2) : " + str1.concat(str2) + "<br>"); // str1.concat(str2) : concat
+  
+
+Exampe3) // 배열합치기
+var arr1 = new Array ("배열 1", "배열 2");
+var arr2 = new Array ("배열 3", "배열 4");
+var arr = arr1.concat(arr2); 
+
+document.write("arr : " + arr + "<br>"); //  arr : 배열 1,배열 2,배열 3,배열 4
+
+
+Example4)
+var a="yujin";
+var b="bong";
+var c;
+c=a.concat(b);
+console.log(c); // yujinbong
