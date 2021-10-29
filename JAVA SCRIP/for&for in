@@ -8,6 +8,25 @@ for(var i=0; i <=30; i++ ){
 console.log(days);
 
 Example2)
+var grade,mark=90;
+if(mark>=90)
+grade ='A+';
+else if(mark>=80)
+grade='A';
+else if(mark>=70 )
+grade='B';
+else if(mark>=60)
+grade='C';
+else if(mark>=50)
+grade='D';
+else
+grade='F';
+
+console.log(grade);
+
+
+
+Example3)
 for(var i=0; i <=30; i++ ){
     console.log(days);;
 }
