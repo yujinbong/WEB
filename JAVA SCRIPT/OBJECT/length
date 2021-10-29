@@ -1,0 +1,7 @@
+  The length property returns the number of characters in a string.
+  Syntax: stringName.length
+
+Example1)
+var myString = "WEB222";
+ //                        012345                             						   
+myString.length; // returns 6
