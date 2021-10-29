@@ -50,4 +50,7 @@ console.log(int_value)
 
 // 타입이 숫자인 0.777로 변환됨
 
-코드가 간결하여 자주 사용되니 참고하세요.
+console.log(parseInt(number));
+var number2='12345' * 1
+
+console.log(parseInt(number2));
