@@ -1,0 +1,7 @@
+Example1)
+//return 값을 이용해 어떤값을 산출하고싶은가를 선택할수있다.
+function sqare (number){
+    return number + number;
+}
+
+console.log(sqare(5));
