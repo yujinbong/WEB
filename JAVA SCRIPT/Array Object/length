@@ -10,5 +10,5 @@ myAarray3 [2] = "Green";
 
 console.log( myAarray1.length ); // 0
 console.log( myAarray2.length ); // 6
-console.log( myAarray3.length ); // 3
+console.log( myAarray3.length ); // 3 -> 추가설명 2라는 값을 넣었으니 0.1.2의 길이를 가져 3을 출력한다.
 
