@@ -1,0 +1,14 @@
+The length property returns the number of elements / occurrences in the array
+
+Example)
+
+var myAarray1 = []; 
+var myAarray2 = [11, 15, 13, "blue", 24, 35.05];
+
+var myAarray3 = [];
+myAarray3 [2] = "Green";
+
+console.log( myAarray1.length ); // 0
+console.log( myAarray2.length ); // 6
+console.log( myAarray3.length ); // 3
+
