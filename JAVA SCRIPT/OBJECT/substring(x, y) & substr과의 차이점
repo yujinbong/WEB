@@ -1,0 +1,34 @@
+  The substring(x,y) returns a sub string where: 
+x starting from (index) - inclusive
+y to (index) - not inclusive - if y < than x, then switch the 2 parameters
+
+Example1)
+
+var myString = "WEB222";
+//                         012345
+
+console.log( myString.substring(1,4) );  // "EB2"
+console.log( myString.substring(4,4) );  // ""
+console.log( myString.substring(4,2) );  // "B2"
+console.log( myString.substring(-4,4) ); // "WEB2"
+console.log( myString.substring(0,9) );  // "WEB222"
+console.log( myString.substring(4)   );  // "22"
+
+
+
+
+*** substr과 substring에 차이점
+두가지 메소드의 차이점을 보자면
+str.substr(시작 인덱스, 추출 갯수)
+substr은 시작 인덱스번호, 몇개를 추출할것인지를 입력받는 반면에
+
+str.substring(시작 인덱스번호, 끝 인덱스번호)
+substring은 시작 인덱스 번호, 끝 인덱스번호를 입력받는다.
+
+예)
+  var str= "ABCDEFGH";
+    var str_substr = str.substr(1,4); // 1번 인덱스부터 4개의 문자를 추출하라!
+    var str_substring = str.substring(1,4); // 1번 인덱스부터 4번 인덱스까지 추출하라!
+    
+    console.log(str_substr); // BCDE
+    console.log(str_substring); // BCD
