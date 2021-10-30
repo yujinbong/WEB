@@ -1,0 +1,15 @@
+Allows you to add properties and methods to an object 
+note all objects have a "prototype" method) – this is further explained later
+
+
+Example1)
+
+String.prototype.reverse = function () {
+   var rev = '';
+   for (var i = this.length - 1; i >= 0; i--)
+      rev += this[i]; // the string
+   return rev;
+};
+
+var myString = "WEB222";
+console.log( myString.reverse() );  // 222BEW
