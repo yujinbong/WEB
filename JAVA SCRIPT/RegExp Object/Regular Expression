@@ -1,0 +1,6 @@
+정규 표현식은 문자열에 나타는 특정 문자 조합과 대응시키기 위해 사용되는 패턴입니다. 자바스크립트에서, 정규 표현식 또한 객체이다.
+이 패턴들은 RegExp의 exec 메소드와 test 메소드 그리고 String의  match메소드,replace메소드,search메소드,split 메소드와 함께 쓰인다.
+
+표현식   : var re = /ab+c/;
+
+호출방법 : var re = new RegExp("ab+c");
