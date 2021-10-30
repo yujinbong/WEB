@@ -1,0 +1,9 @@
+The trim() method removes whitespace (blank characters) from the left and right of the string.
+trimLeft() & trimRight() methods work with some browsers but not others - Don't use them.
+
+var myString = "    WEB 222   "; 
+console.log( myString.length );    // 14
+
+myString = myString.trim();
+console.log( myString );           // WEB 222
+console.log( myString.length );    // 7
