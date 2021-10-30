@@ -1,0 +1,11 @@
+A String method that tests for a match in a string. It returns the index of the match, or -1 if the search fails.
+->일치하면 인덱스를 반환함
+
+Syntax: search(RegExp)
+  
+Example)
+var myString = "WEB222"
+
+myString.search(/222/);   // returns 3 
+myString.search(/B/);       // returns 2 
+myString.search(/322/);   // returns -1 
