@@ -1,0 +1,10 @@
+Example1)
+var arrayName1 = [11, 15, 13, "blue", 24, 35.05];
+
+* Using the new keyword (nearly identical - for simplicity, do not use this method)
+
+Example2)
+var arrayName1 = new Array (11, 15, 13, "blue", 24, 35.05);
+Example3)
+var arrayName2 = new Array();
+arrayName2[2] = 100;
