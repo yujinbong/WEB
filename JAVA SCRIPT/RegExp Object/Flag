@@ -43,3 +43,6 @@ strMultyLine.match(/$/g);
 
 strMultyLine.match(/$/gm);
 // ["", "", "", ""]
+
+
+출처 : https://heropy.blog/2018/10/28/regexp/
