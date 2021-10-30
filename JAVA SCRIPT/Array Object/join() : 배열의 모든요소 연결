@@ -1,0 +1,14 @@
+The join() method is used to join all the elements of an array into a single string separated by a specified string separator 
+if non separator is specified, the default is a comma.
+Essentially the opposite of the split() method of a String.
+
+Syntax:  arrayName.join(str)
+
+
+Example)
+var myArray = ["Red", "Green", "Blue", "Yellow"];
+console.log( myArray );                  // Red,Green,Blue,Yellow (Array)
+console.log( myArray.join()    );    // Red,Green,Blue,Yellow
+console.log( myArray.join('+') );   // Red+Green+Blue+Yellow
+console.log( myArray.join(' ') );    // Red Green Blue Yellow
+console.log( myArray.join("&") ); // Red&Green&Blue&Yellow
