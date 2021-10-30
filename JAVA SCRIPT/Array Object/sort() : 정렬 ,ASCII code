@@ -1,0 +1,11 @@
+The elements in the array are sorted based on their *ASCII code.
+
+Syntax:  arrayName.sort()
+
+Example)
+
+var array1 = ["Red", 2, "Green", "15", "Blue", 101, "Yellow"];
+var array2 = [99, 2, 38, 15, 66, 101, 200];
+
+console.log( array1.sort() );  // 101,15,2,Blue,Green,Red,Yellow
+console.log( array2.sort() );  // 101,15,2,200,38,66,99
