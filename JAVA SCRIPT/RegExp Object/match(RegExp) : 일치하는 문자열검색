@@ -1,0 +1,48 @@
+  A String method that executes a search for a match in a string. 
+  It returns an array of the found text value. or null on a mismatch.
+  Example)
+  
+ var str = "Welcome to Toronto";
+ var patt1 = /to/i;    // i: ignore case-sensitivity (returns first match)
+ // same as:  var patt1 = new RegExp("to", "i"); 
+ var result = str.match(patt1);
+ console.log(result);                   // to 
+ console.log(result[0]);              // to
+ console.log(result.input);        // Welcome to Toronto 
+
+Example2)
+
+ var str = "Welcome to Toronto";
+ var patt1 = /to/g;       // g: do a global search
+ var result = str.match(patt1);
+ console.log(result);              // to,to 
+
+
+Example3)
+
+ var str = "Welcome to Toronto";
+ var result  = str.match(/to/ig);  // ig: global and case-insensitive
+
+ console.log(result );    // to, To, to   
+
+
+
+Example4)
+
+var str = 'For more information, see Chapter 3.4.5.1';
+var re = /see (chapter \d+(\.\d)*)/i;
+var found = str.match(re);
+
+console.log(found);
+
+// logs [ 'see Chapter 3.4.5.1',
+//        'Chapter 3.4.5.1',
+//        '.1',
+//        index: 22,
+//        input: 'For more information, see Chapter 3.4.5.1' ]
+
+// 'see Chapter 3.4.5.1'는 완전한 매치 상태임.
+// 'Chapter 3.4.5.1'는 '(chapter \d+(\.\d)*)' 부분에 의해 발견된 것임.
+// '.1' 는 '(\.\d)'를 통해 매치된 마지막 값임.
+// 'index' 요소가 (22)라는 것은 0에서부터 셀 때 22번째 위치부터 완전 매치된 문자열이 나타남을 의미함.
+// 'input' 요소는 입력된 원래 문자열을 나타냄.
