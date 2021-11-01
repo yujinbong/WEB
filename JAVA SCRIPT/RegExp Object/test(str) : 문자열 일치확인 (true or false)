@@ -1,0 +1,12 @@
+  A RegExp method that tests for a match in a string. 
+  It returns true or false.
+  
+  Stntax 
+  test(str)
+  
+  Example)
+  
+const str = 'hello world!';
+const result = /^hello/.test(str);
+
+console.log(result); // true
