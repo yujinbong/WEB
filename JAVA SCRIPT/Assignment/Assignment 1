@@ -1,0 +1,151 @@
+/*********************************************************************************
+* WEB222 – Assignment 01
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part of
+* this assignment has been copied manually or electronically from any other source (including web sites)
+* or distributed to other students.
+*
+* Name: Yujin Bong Student ID: 147525208 Date: Sep.28
+*
+********************************************************************************/
+/* Task 1
+a) Infinity
+:Infinity, which means infinity, means a value greater than any other number, and Infinity, 
+which has the same effect as infinity, multiplies any number, 
+results in Infinity, and divides any number by Infinity, resulting in zero.
+
+b) Undefined(Not a number)
+: undefine means 'none'. If I try to use a variable or property that has not been assigned a value, 
+undefined is returned.
+
+c) NaN
+:A value to represent an invalid or non-representable value.
+)(Therefore, in order to avoid NaN,
+We need to check if the value is NaN before printing.
+How to check if a specific value is NaN
+isNaN(value); true if NaN
+Otherwise, false.)
+*****************************/
+//Infinity exameple
+//alert(123/0);
+
+//undefined example
+//var a;    //no value,
+//document.writeln(a);       //undefined
+//document.writeln(b);     //If you call a value that doesn't exist, the subsequent code will stop running.
+//document.writeln("hello"); //no running
+
+// NaN example
+//alert(123/'a');
+
+/*****************************
+* Task 2
+*****************************/
+//binary->decimal!!!!!!!!!!
+let binary = "1010";
+console.log(` binary(${binary}) -> decimal(${parseInt(binary, 2)})`); 
+//reference : https://ithub.tistory.com/290
+// output : binary(1010) -> decimal(10)
+
+//octal->decimal!!!!!!!!!!!
+const octal = "713";
+console.log(` octal(${octal}) -> decimal(${parseInt(octal,8)})`); 
+//output :  octal(713) -> decimal(459)
+
+
+//hex->decimal!!!!!!!
+const hex = "AF";
+console.log(` hex(${hex}) -> decimal(${parseInt(hex,16)})`);  
+//OUTPUT -> hex(AF) -> decimal(175)
+
+/*****************************
+* Task 3
+*****************************/
+
+var celcius = 25;
+console.log(`${celcius}C is ${(celcius * (9/5) + 32).toFixed(0)}F`); // no decimal point
+console.log(`${celcius}C `)
+
+var fahrenheit = 78;
+console.log(`${fahrenheit}F is ${((fahrenheit - 32) * (5 / 9)).toFixed(0)}C`);
+
+
+/*****************************
+* Task 4
+*****************************/
+
+// a 확인하기!!
+function largerNum(a, b) { 
+    return a > b ? a : b;
+  }
+  
+  // b 확인하기!!!!
+  var greaterNum = function(a, b) {
+    return a > b ? a : b;
+  }
+  
+  // c 확인하기!!!
+  console.log(`The larger number of 5 and 12 is ${largerNum(5, 12)}.`);
+  console.log(`The larger number of 11 and 4 is ${greaterNum(11, 4)}.`);
+
+
+/*****************************
+* Task 5
+*****************************/
+function Evaluator() {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+      sum += parseInt(arguments[i]);
+    }
+    return sum / arguments.length >= 25;
+  }
+
+  
+  // b
+  console.log(`Average grater than or equal to 25: ${Evaluator(1, 2, 3, 4, 5)}`);
+  console.log(`Average grater than or equal to 25: ${Evaluator(10, 20, 30, 40, 50)}`);
+  console.log(`Average grater than or equal to 25: ${Evaluator(10, 20, 30)}`);
+
+/*****************************
+* Task 6
+*****************************/
+
+// a) Write a function called showMultiples using the declaration approach
+function showMultiples(num, numMultiples) {
+    for (let i = 1; i <= numMultiples; i++) {
+        console.log(`${num} x ${i} = ${num * i}`);
+    }
+}
+
+// b) Call this function 3 times with different number parameters
+showMultiples(5, 4);
+showMultiples(3, 9);
+showMultiples(7, 5);
+
+
+
+
+/*****************************
+* Task 7
+*****************************/
+
+
+/*a) Name the outer function as ‘Increment”.
+b) Store 100 as a counter in the outer function.
+c) Increment the counter by 100 in the inner function and return.
+d) Call “Increment” three times and store the returned value in a variable each time.
+e) Log the final value in the web console (400 is the final value for the third call).
+*/
+
+function Increment() {
+var counter = 100;
+
+function InnerFunction() {
+counter+=100; // +100
+    return(counter);}
+return InnerFunction;
+}
+var innerFunc = Increment();
+var one=innerFunc();//1
+var two=innerFunc();//2
+var three=innerFunc();//3
+console.log(three);
