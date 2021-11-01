@@ -1,3 +1,5 @@
+4자이상의 알파벳 문자 찾기!!!
+
 var candidateNames = ["John","Peter","Dan","Lucy","James","Joe"]
 var registeredNames = [];
 var patt1 = /^[a-zA-Z]{4,}$/;
