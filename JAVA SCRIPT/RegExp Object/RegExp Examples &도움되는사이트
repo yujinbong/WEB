@@ -1,0 +1,18 @@
+var candidateNames = ["John","Peter","Dan","Lucy","James","Joe"]
+var registeredNames = [];
+var patt1 = /^[a-zA-Z]{4,}$/;
+for(var i=0; i < candidateNames.length; i++){
+     var currentName = candidateNames[i];
+     if(patt1.test(currentName)) {
+          registeredNames.push(currentName);
+          console.log(currentName + ": registered!");
+     }else{
+          console.log(currentName + ": not registered (name must have at least 4 characters)!");
+     }
+}
+console.log("Registered Students: " + registeredNames);
+
+
+ Regular Expressions Tutorial: http://www.regular-expressions.info/tutorial.html
+ Excellent Regex tester & Learning Resource: http://regexr.com  
+
