@@ -1,0 +1,18 @@
+  Math.random()
+Generates a pseudorandom number between 0 (inclusive) and 1 (exclusive)
+e.g:
+// Returns a random number between 0 (inclusive) and 1 (exclusive)
+return Math.random();
+
+// Returns a random number between min (inclusive) and max (exclusive)
+return Math.random() * (max - min) + min;
+
+// Returns a random integer between min (included) and max (excluded)
+return Math.floor(Math.random() * (max - min)) + min;
+
+// Returns a random integer between min (included) and max (included)
+return Math.floor(Math.random() * (max - min + 1)) + min;
+
+
+Examples from MDN page on Math.random()
+
