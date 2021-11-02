@@ -3,8 +3,18 @@ Date 객체는 1970년 1월 1일 UTC(협정 세계시) 자정과의 시간 차�
 Example1)
 
 인스턴스 메서드
+Date.prototype.getMonth()
+Date에서 현지 시간 기준 월을 반환합니다.
+* Example)
+var myMonth = (new Date()).getMonth();
+console.log(myMonth); // The myMonth is 6 which is, July
+
 Date.prototype.getDate()
 Date에서 현지 시간 기준 일(1–31)을 반환합니다.
+* Example)
+var myDay = (new Date()).getDate();
+console.log(myDay ); // outputs 3 (since this lecture is on the 3rd of June)
+
 Date.prototype.getDay()
 Date에서 현지 시간 기준 요일(0–6)을 반환합니다.
 Date.prototype.getFullYear()
@@ -115,6 +125,20 @@ let date = new Date(98, 1)  // Sun Feb 01 1998 00:00:00 GMT+0900 (대한민국 �
 // 구형 메서드: 여기서도 98을 1998로 처리
 date.setYear(98)            // Sun Feb 01 1998 00:00:00 GMT+0900 (대한민국 표준시)
 date.setFullYear(98)        // Sat Feb 01 0098 00:00:00 GMT+0827 (대한민국 표준시)
+
+
+Example3)
+
+var myDate = new Date();
+var myHour = myDate.getHours();
+var myMinutes = myDate.getMinutes();
+var mySeconds = myDate.getSeconds();
+
+console.log(myHour + ":" +  myMinutes  + ":" + mySeconds); 
+
+// outputs 10:30:35 (If this statement was 
+// executed at 10:30 and 35 seconds in the morning)
+
 
 
 
