@@ -1,0 +1,29 @@
+ HTML (HyperText Markup Language) is the set of markup symbols or codes inserted in a file intended for display on a World Wide Web browser page. 
+Hypertext is text with hyperlinks.
+The markup tells the Web browser how to display a Web page's text and images for the user.
+  The markup symbols/indicators are often called “tags”, which are enclosed in angle brackets 
+Most html tags come in pairs e.g. <p> and </p>
+<p> being the opening of the tag and 
+</p> being the closing of the tag. 
+In between these tags you can add text-based content.
+There are some tags that are not paired – these tags are known as empty tags, such as <img />
+
+
+Structure
+<!DOCTYPE html>
+<html>
+<head>
+   <title>WEB222</title>
+   <script src="js/myscript.js"></script>
+</head>
+<body>
+   <h2>Basic HTML5 Document Structure</h2>
+   <p>This is a paragraph</p>	
+   <p>Here are links to
+        <a href="https://ict.senecac.on.ca/">ICT</a>
+        <a href="http://www.senecac.on.ca/">Seneca College</a>
+   </p>	  
+</body>
+</html>
+
+
