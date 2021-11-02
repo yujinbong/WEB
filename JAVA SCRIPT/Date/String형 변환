@@ -1,0 +1,16 @@
+Methods
+toString()
+toLocaleString()
+toUTCString()  // UTC: Universal Time Coordinated – (ie: Standardized Time) 
+toDateString()
+
+Example)
+
+var dt = new Date();
+console.log(dt);                  // Thu Jun 02 2016 11:11:50 GMT-0400 (Eastern Daylight Time)
+console.log(dt.toString());       // Thu Jun 02 2016 11:11:50 GMT-0400 (Eastern Daylight Time)
+console.log(dt.toLocaleString()); // 6/2/2016, 11:11:50 AM
+console.log(dt.toUTCString());    // Thu, 02 Jun 2016 15:11:50 GMT
+console.log(dt.toDateString());   // Thu Jun 02 2016
+
+
