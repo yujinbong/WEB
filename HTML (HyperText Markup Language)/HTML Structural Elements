@@ -1,0 +1,20 @@
+<!DOCTYPE>
+Specifies the document type
+<html>
+Specifies an html document
+<head>
+Specifies information about the document
+<title>
+Specifies the document title
+<meta>
+Specifies meta information 
+<link>
+Specifies a resource reference 
+<script>
+Specifies a script
+<style>
+Specifies a style definition
+<body>
+Specifies the body element
+<!--...-->
+Specifies a comment
