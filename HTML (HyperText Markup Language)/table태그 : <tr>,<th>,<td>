@@ -1,0 +1,29 @@
+ table태그 : <tr>,<th>,<td>
+ 
+ table은 표를 만드는 태그로서
+ 작은표를 만들수도있고 홈페이지의 전체구성(layout)을 만드는데도 사용될수있다.
+ 
+홈페이지나 전체구성이나 배치를 위해서는 <div>태그를 사용하는것이 좋다.
+
+<table>은 각각 셀로 만드는데 header cell과 standard cell로 나누어진자.
+<th>를 header cell이라 부르며 나머지를 standrd cell로 부른다.
+<th>내용</th> : table head약자로, 표의 제목을 쓰는 역할(기본값은 굵은 글씨체에 중앙정렬)
+<tr>내용</tr> : table row약자로, 가로줄을 만드는 역할(기본값은 보통글씨체에 왼쪽정렬)
+<td>내용</td> : table data약자로, 셀을 만드는 역할(기본값은 보통글씨체에 왼쪽정렬)
+
+사용예)
+
+https://aboooks.tistory.com/59
+
+
+table 태그와 함께 사용될 수 있는 속성
+: colspan,rowspan,border,bgcolor,width,height,cellpadding,cellspacing,align 등
+
+colspan: column span의 약자로 셀(가로줄)을 합치는 개수를 지정한다.
+rowspan: row span의 약자로 셀(세로줄)을 합치는 개수를 지정한다.
+border: 테이블 경계선 굵기를 지정한다(예:border="10")
+width: 너비를 지정(픽셀이나,%)
+height: 높이를지정(픽셀이나,%)
+cellpadding: 셀과 경계선 사이의 여백
+cellspacing: 셀과 셀 사이의 여백
+align : 셀의 가로줄을 오른쪽,왼쪽,중앙등으로 정렬
