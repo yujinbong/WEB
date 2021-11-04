@@ -1,0 +1,87 @@
+append와 appendChild메서드는 모두 부모 노드에 자식 노드를 추가하는 메서드역할을 한다.
+
+
+*append()
+append메서드를 활용하면 노드객체(Node object)나 DOMString(text)를 사용할수있다. 또한 한번에 여러개의 자식요소를 설정할 수있다.
+
+Node object사용 예시
+//Node object삽입
+const parent = document.createElement('div');
+const child = document.createElement('p');
+
+parent.append(child);
+
+결과: 
+<div><p></p></div>
+
+
+문자열(DOMString)사용 예시
+const parent=document.createElement('div');
+parent.append('append 예시');
+
+결과:
+<div>append 예시 </div>
+
+
+여러개의 자식 요소를 설정하는 예시
+
+const div = document.createElement('div');
+const span=document.createElement('span');
+const p=document.createElement('p');
+
+document.body.append(div,'hello',span,p);
+
+결과 :
+<body>
+<div> </div>
+hello
+<span></span>
+<p></p>
+</body>
+
+append메서드는 return 값을 반환하지않는다. 예를들어,
+
+
+const div = document.createElement('div');
+const span=document.createElement('span');
+const p=document.createElement('p');
+
+console.log(document.body.append(div,'hello',span,p)); // undefined.
+
+
+* appendChild()
+Node object 사용 예시
+appendchild 메서드는 append 메서드와는 다르게 오직 Node 객체만 받을 수 있다. 또한 append는 여러개의 노드와 문자를 추가할 수 있는 반면,
+appendChild 메서드는 한번에 오직 하나의 노드만 추가할수있다.
+
+Example)
+const div = document.createElement('div');
+const p=document.createElement('p');
+parent.appendChild(child);
+
+결과값:
+<div><p></p></div>
+
+문자열(DOMString)사용 예시
+appendChild매서드는 DOMString을 넣을경우 에러가 발생한다.
+
+const parent=document.createElement('div');
+
+parent.appendChild('텍스트');
+
+결과값없음 에러발생
+
+appendChild 메서드는 return값을 반환한다.
+
+const div=document.createElement('div');
+const span=document.createElement('span');
+
+console.log(document.body.appendChild(div)); 
+결과값: div
+
+
+
+
+
+
+
