@@ -1,0 +1,12 @@
+* document.getElemetsByName
+document.getElemetsByName를 사용하면 태그의 이름(name)의 속성값으로 노드에 접근이 가능하다.
+Example1)
+html 코드
+<input type='text' name='textName'/>
+
+javascript 코드
+//name이 'textName'인 모든 노드를 찾아 배열로 반환합니다.
+const textBoxList = document.getElemetsByName("textName:);
+for(textBox of textBoxlist) {
+textBox.value = 'Hello World';
+}
