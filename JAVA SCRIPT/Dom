@@ -90,14 +90,10 @@ DOM 트리 실시간 확인 사이트 : https://software.hixie.ch/utilities/js/l
 
 때문에 이를 나무뿌리에 비유하여 루트노드(RootNode)라고도 부른다.
 
-
-특정 노드를 기준으로 위에 붙어있는 것이 부모노드, 아래에 있는 것이 자식 노드라고 생각하면된다.
-
-위의 사진으로 예를들면, head의 부모노드는 html이며, 자식노드는 title이다.
-
-body의 경우 부모노드는 head와 똑같이 html이지만, 자식노드는 h1과 p이다.
-
+tree에서는 위쪽의 node를 부모(parent) 노드 아랫쪽 노드를 자식(child)라고 한다. root node는 가장 위에서 시작되는 node이니까 parent가 없는 node가 된다. 
+그리고 children(자식)이 없는 node를 leaf node라고 한다. 뿌리(root)에서 시작해서 잎(leaf)에서 끝나는 것,
 
 자바스크립트로 원하는 요소에 쉽게 접근하기 위해서의 위의 DOM 트리를 잘 알고 있는 것이 중요하다
 
+Reference : https://blog.naver.com/magnking/220972680805
 
