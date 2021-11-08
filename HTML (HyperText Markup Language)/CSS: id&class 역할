@@ -1,0 +1,23 @@
+ CSS(Cascading Style  Sheets)
+ -HTML문서에있는 요소들을 선택하여 스타일을 적용하는데 사용하낟.
+ -글씨의 색상, 태그의 크기, 이미지적용, 위치설정등을 가능하게한다.
+ 
+ Table
+ -Table,Cation,Thead,Tbody,tfoot,tr,th,td
+ -border-spacing : 선과 선 사이간격을 주는 css속성
+ -bordeer-collapse : 선 간격의 형태를 처리하는것
+ 
+ CSS Selectors : HTML 요소에 필요한 디자인을 처리할 수 있도록 선택하는 것(css 선택자)
+ 
+ 
+ 
+id :스타일을 지정할 때 한가지만 지정해 쓰는 이름
+하나의 태그에 가질 수 있는 속성 값의 수는 1개
+예) <id="id1"> </id>
+
+
+class : 그룹으로 묶어서 스타일을 지정할 때 쓰는 이름
+하나의 태그에 가질 수 있는 속성값 의 수 : 여러개 (띄어쓰기로구분)
+예) <class="class1 class2 class3">
+
+둘의 공통점은 이름은 자유롭게 지을 수 있으나, 숫자로 시작하면 안더ㅣㄴ다.
