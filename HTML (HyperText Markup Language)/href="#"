@@ -1,0 +1,13 @@
+What is href="#" and why is it used?
+
+
+A hash - # within a hyperlink specifies an html element id to which the window should be scrolled.
+href="#some-id" would scroll to an element on the current page such as <div id="some-id">.
+href="//site.com/#some-id" would go to site.com and scroll to the id on that page.
+
+href="#" doesn't specify an id name, but does have a corresponding location - the top of the page. 
+Clicking an anchor with href="#" will move the scroll position to the top.
+
+	<div id="links"><a href="#" id="flag-images">Flag Images</a></div>
+-> flag-images가있는곳으로 
+
