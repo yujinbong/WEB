@@ -1,0 +1,30 @@
+특정 html 태그 안에 들어갈 html을 말한다.
+document.getElemntByld()함수를 이용해서 원하는 html태그에 구조적으로 접근하여 html 태그를 삽입 또는 추출할수있다.
+간단하고 단순한 문자열을 처리하는데 적합한 형태이다.
+
+DOM 객체 innerHTML 속성
+DOM 객체에는 innerHTML이란 속성이 존재합니다. 이속성은 DOM 요소에 대응되는 태그의 내부 HTML을 가리킵니다. 예를들어 다음과 같은 HTML 소스가 있다고 가정합니다.
+
+<!DOCTYPE html>                                                                     
+<html> 
+<head> 
+</head> 
+<body> 
+    <h1>Dom</h1> 
+</body> 
+</html> 
+cs
+
+
+여기서 body의 innerHTML은 <h1>Dom></h1> 입니다.
+    <script> 
+           window.onload = function () { 
+                var inner = document.body.innerHTML;                                 
+                console.log(inner);    //<h1>Dom</h1>
+           }
+    </script> 
+
+
+
+
+출처: https://dololak.tistory.com/360 [코끼리를 냉장고에 넣는 방법]
