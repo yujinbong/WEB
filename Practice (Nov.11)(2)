@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        *{ /*디자인하기전 기본적으로 설정되어있는것들을 제거하고 시작하기!(모든태그요소 선택자로 기본 글자색이나 밑줄제거등을 할수있다.*/
+            border-collapse: collapse;
+            margin:0px; /*margin과 paddig을 0으로 설정하면 표와 페이지사이의 간격이 없어진다*/
+            padding:0px;
+            text-decoration: none;
+            color:black;
+            list-style:none;
+
+
+        }
+        table {
+            border: 1px solid black;
+           /* border-collapse: collapse;  표의 선 간격들을 하나로 잡게할수있다.*/
+
+        }
+
+        /*  table >thead> tr> th{ <!--경로 확인을 잘해야함 table 아래에 thgead가있고 그 아래에 tr/td -->
+            border :1px solid gray;
+        } */
+        table th {
+            /*위에 구문과 동일하다. 이게 더 쉬움, table 태그안에있는 th에 모든 CSS를 적용시켜라*/
+            border: 1px solid gray;
+            background: cornsilk;
+        }
+
+        table>tbody>tr>td {
+            border: 1px solid gray;
+            background: darkkhaki;
+        }
+
+
+        div {
+            background: pink;
+            /* 부모 div에 배경을 설정*/
+            padding: 10px;
+            /*면적을 같게함*/
+        }
+
+        div>span:first-child {
+            background-color: red;
+            padding-bottom: 20px;
+            /* paddind의 아랫부분만 pixel이 적용되어있다. left,rigt,bottom 적용가능*/
+        }
+
+        div>span:last-child {
+            background-color: yellowgreen;
+            padding: 20px;
+        }
+
+        div>span {
+            background-color: green;
+            padding: 10px;
+            /*면적이 늘어남*/
+            margin: 40px;
+            /*서로간의 간격을 떠어뜨림*/
+
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>성별</th>
+                <th>나이</th>
+                <th>키</th>
+            </tr>
+        <tbody>
+
+        </tbody>
+        <tr>
+            <td>김탐</td>
+            <td>여성</td>
+            <td>20</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td>아로니아</td>
+            <td>남성</td>
+            <td>20</td>
+            <td>180</td>
+        </tr>
+
+        </thead>
+
+
+    </table>
+    <div>
+        <span>타모</span>
+        <span>디자인</span>
+        <span>입니다</span>
+    </div>
+</body>
+
+</html>
