@@ -1,0 +1,53 @@
+Property: border-radius
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8" />
+   <title>Rounded Corner & Shadow</title>
+   <style type="text/css">
+	    div
+		{
+		    /* rounded corners */
+			border:2px solid #purple;
+			padding:10px 40px;
+			background:yellow;
+			width:500px;
+			height:150px;
+			border-radius:30px;
+			/* border-radius:10%; */
+			-moz-border-radius:25px; /* Firefox 3.6 and earlier */
+
+            /* box shadow */
+
+			-moz-box-shadow: 10px 10px 5px #888888; /* Firefox 3.6 and earlier */
+            /* box-shadow: 50px 50px 15px 15px blue inset; */
+            box-shadow: 50px 50px 15px 15px blue;
+		}
+
+
+   </style>
+ </head>
+ <body>
+  <div> This div has rounded corners.... </div>
+ </body>
+</html>
+
+
+/* 배운점 :
+1.  box-shadow: 박스요소에 그림자를 넣는 속성 
+    -> 문법 : box-shadow : none| h-shadow v-shadow blur spreade color | inset
+    
+    none : 기본값으로, 그림자가 표시되지안흔ㄴ다.
+    h-shadow : 필수지정, 수평 그림자 위치, 양수 갑승ㄹ 지정하면 박스 오른쪽에 그림자가 드리워지고 음수 값은 박스 왼쪽에 그림자가 드리워진다.
+    v-shadow : 수직 그림자 위치, 양수값은 박스 위쪽에 그림자가 드리워지며 음수 값은 박스 아래쪽에 그림자가 드리워진다.
+    blur : 박스 그림자의 흐림 정도.0으로 설정시 그림자가 진하고, 숫자가 높아질수록 점점 흐릿해진다.
+    spread : 그림자가 드리워지는 정도
+    inset : 선택 지정, 바깥 그림자(outset)에서 안쪽 그림자로 바꿈.
+    예)
+    #test {
+    box-shadow : 10px 10px 10px 20grey;}
+    
+    */
+    
