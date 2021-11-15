@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8" />
+   <title>CSS Padding </title>
+   <style type="text/css">
+
+		html, body{
+			margin:0px; 
+			padding:0px;
+		} 
+
+		p.type1{
+			padding-top:25px; 
+			width:300px;
+			border:solid;
+		}
+
+		p.type2{
+			padding-right:25px;
+			width:300px;
+			border:solid;
+		}   
+			
+		p.type3{
+			padding-bottom:35px;
+			width:300px;
+			border:solid;
+		} 
+
+		p.type4{
+			padding-left:15px; 
+			width:300px;
+			border:solid;
+		} 
+
+		p.type5{
+			margin:auto;
+			padding:15px;
+			width:300px;
+			border:solid;
+		}
+   </style>
+</head>
+<body>
+  <h3>CSS Padding Example</h3>
+  <p class="type1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae dignissim massa. Aenean tortor est.</p>
+  <p class="type2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae dignissim massa. Aenean tortor est.</p>
+  <p class="type3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae dignissim massa. Aenean tortor est.</p>
+  <p class="type4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae dignissim massa. Aenean tortor est.</p>
+  <p class="type5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae dignissim massa. Aenean tortor est.</p>
+ 
+</body>
+</html>
+
+/*배운것 : 	
+1. margin:auto; 
+-> margin 속성을 auto로 설정하여 컨테이너 내에서 요소를 가로로 가운데에 맞출 수 있습니다. 
+   그러면 요소가 지정된 너비를 차지하고 나머지 공간이 왼쪽과 오른쪽 여백 사이에 균등하게 분할됩니다.
