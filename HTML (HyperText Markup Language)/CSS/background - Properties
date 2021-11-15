@@ -1,0 +1,13 @@
+  background-image:
+
+where image.jpg may be a relative or absolute path
+  background-color:  can still be used, and will provide colour where the image is not displayed
+  background-position: values: left top (default), right bottom, center center
+  background-repeat: values: repeat (default), repeat-x, repeat-y, no-repeat
+  background-size: values: width (value), height (value), contain, cover
+  shorthand property: 
+  body{ background: url("../img/seneca_logo.gif") no-repeat grey right top;}
+
+
+ exampel: https://scs.senecac.on.ca/~patrick.crawford/shared/fall-2016/int222/lecture6-pt1/bg.html
+
