@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <title> background </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bg.css" type="text/css"/>
+</head>
+
+<body>
+   <h1> Niagara Falls! </h1>
+   <p> testing paragraph background. </p>
+   
+</body>
+
+</html>
+
+====
+style을 link로사용해서 적용시키는 방법으로,외부파일 bg.css를 사용하려고 href를 사용한다.
