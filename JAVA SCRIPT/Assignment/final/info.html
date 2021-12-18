@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+KR:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+    <title>User info page</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--top-->
+        <div class="top">
+            <span><img src="seneca.png" alt="no image">
+            </span>
+        </div>
+        <!--middle-->
+        <div class="middle">
+            <!--middle left-->
+            <div class="middle_left">
+                <nav id="nav">
+                    <ul>
+
+                        <li><a href='honesty.html' id="honesty">-> Honesty</a></li>
+                        <li><a href='info.html' id='info'>-> Info</a></li>
+                        <li><a href='reflection.html'>-> Reflection</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--middle right-->
+            <div class="middle_right1">
+                <form id="signup" method="post" action="https://httpbin.org/post" accept-charset="utf-8">
+                    <div class="middle_right_error">
+                        <div id="error"></div>
+                    </div>
+                    <div class="middle_right2">
+                        <div class="fir">
+                            <h3>First Name</h3>
+                            <input type="text" placeholder="First Name" id="firstName">
+                        </div>
+                        <div class="sec">
+                            <h3>Last Name</h3>
+                            <input type="text" placeholder="Last Name" id="lastName">
+                        </div>
+                    </div>
+
+                    <div class="middle_right2">
+                        <div class="third">
+                            <h3>Password</h3>
+                            <input type="password" placeholder="Password" id="password">
+                        </div>
+
+                        <div class="forth">
+                            <h3>Confirm Password</h3>
+                            <input type="password" placeholder="Confirm Password" id="confirmPassword">
+                        </div>
+                    </div>
+
+                    <div class="middle_right2">
+                        <div class="third">
+                            <h3>User Name</h3>
+                            <input type="text" placeholder="User Name" id="username">
+                        </div>
+
+                        <div class="third">
+                            <h3>Age</h3>
+                            <input type="text" placeholder="Age" id="age">
+                        </div>
+                    </div>
+                    <div class="middle_right2">
+                        <div class="third">
+                            <h3>Email</h3>
+                            <input type="email" placeholder="Email" id="email">
+                        </div>
+                    </div>
+                    <div class="middle_radio">
+                        <h3>Education Status</h3>
+                        <input type="radio" name="chk_info" value="Graduated" id="education1">&nbsp;Graduated &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <input type="radio" name="chk_info" value="CSS" id="education2">&nbsp;Current enrolled &nbsp;
+                        &nbsp; &nbsp;
+                        <input type="radio" name="chk_info" value="Did not graduate" id="education">&nbsp;Did not
+                        graduate
+                        <!--add two hidden fields -->
+                        <input type="hidden" name="lastName" id="lastName2" value="Bong" />
+                        <input type="hidden" name="studentId" id="studentId" value="147525208" />
+                    </div>
+                    <!--submit-->
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+
+        <!--bottom-->
+        <div class="bottom">
+            <p>
+                <a href="https://github.com/yujinbong"> - github link -</a>
+                <br>
+                Professor. Tanvie Alam<br>
+                Seneca College
+            </p>
+        </div>
+    </div>
+    <script src="info.js"></script>
+
+</body>
+
+</html>
