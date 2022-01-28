@@ -1,0 +1,28 @@
+
+function randomNumber(maxWaitting){
+return Math.floor(Math.random()*maxWaitting);
+
+}
+
+function a(){
+    setTimeout(function(){
+        console.log("a");
+    },randomNumber(7000)); //3seconds
+}
+
+function b() {
+    setTimeout(function(){
+        console.log("b");
+    },randomNumber(2000)); //3seconds
+
+}
+
+function c() {
+    setTimeout(function(){
+        console.log("c");
+    },randomNumber(9000)); //3seconds
+}
+
+c();
+a();
+b();
