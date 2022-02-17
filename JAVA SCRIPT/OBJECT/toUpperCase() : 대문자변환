@@ -1,9 +1,0 @@
-Converts a string to uppercase (does not alter the original string- returns a copy)
-
-var myString = "Seneca";
-
-console.log( myString.toUpperCase() ); //SENECA
-console.log( myString );  //Seneca
-
-myString = myString.toUpperCase();
-console.log( myString ); //SENECA

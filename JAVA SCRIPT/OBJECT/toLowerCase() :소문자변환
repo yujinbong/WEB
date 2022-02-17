@@ -1,8 +1,0 @@
-Converts a string to lower case (does not alter the original string- returns a copy)
-
-
-var myString = "WEB222";
-
-console.log( myString.length );                // 6
-console.log( myString.toLowerCase() ); // web222
-console.log( myString );                            // WEB222
