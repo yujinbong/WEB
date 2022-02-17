@@ -1,8 +1,0 @@
-여러 개의 아이템을 일정하게 정렬할 때 많이 사용되는 방법으로, 아이템을 감싸는 wrapper에 display: table과 너비를 잡아주고, 
-아이템에 display: table-cell을 선언하여 table의 td 요소처럼 퍼센트 너비값을 갖게 함과 동시에 가로정렬이 되게끔 한다. 
-거기다가 아이템에 vertical-align: middle을 선언하여 손쉬운 세로정렬을 할 수 있다. 그러나 꼭 정렬에만 국한된 방법은 아니다.
-
-table의 성질을 갖게 되었으니 table 요소가 갖는 스타일을 입힐 수 있다는 점에 주목하자.
-예를 들어 아이템들의 border가 겹쳐서 margin: -1px 등으로 조절하기보단 border-collapse: collapse로 border가 겹치지 않게 해줄 수 있다.
-그리고 table-cell로 가로정렬된 아이템들의 너비가 제각각 다를 경우, wrapper에 table-layout: fixed로 아이템의 너비를 고정해준다.
-또한 아이템들의 간격(예: 20px)을 띄우려면 border-spacing: 20px
